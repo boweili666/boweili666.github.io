@@ -170,11 +170,11 @@
       <p><a href="https://arxiv.org/pdf/2309.02354" id="lego_manipulation">
       <heading>A Lightweight and Transferable Design for Robust LEGO Manipulation</heading></a><br>
       Ruixuan Liu, <b>Yifan Sun</b>, Changliu Liu<br>
-      ISFA, 2024<br>
+      International Symposium on Flexible Automation (ISFA), 2024<br>
       </p>
 
       <div class="paper" id="lego_manipulation">
-      <a href="https://arxiv.org/pdf/2309.02354">pdf</a> |
+      <a href="https://www.youtube.com/watch?v=CqrBryAGsd0">youtube</a> |
       <a href="javascript:toggleblock('lego_manipulation_abs')">abstract</a> |
       <a shape="rect" href="javascript:togglebib('lego_manipulation')" class="togglebib">bibtex</a> |
       <a href="https://arxiv.org/pdf/2309.02354">arXiv</a> 
@@ -196,6 +196,40 @@
     </td>
   </tr>
 
+  <!-- Guard -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2305.13681">
+          <img src="images/guard/guard.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2305.13681" id="guard">
+      <heading>GUARD: A Safe Reinforcement Learning Benchmark</heading></a><br>
+      Weiye Zhao*, <b>Yifan Sun</b>*, Feihan Li, Rui Chen, Ruixuan Liu, Tianhao Wei, Changliu Liu<br>
+      Transactions on Machine Learning Research (TMLR), 2024<br>
+      </p>
+
+      <div class="paper" id="guard">
+      <a href="https://github.com/intelligent-control-lab/guard">code</a> |
+      <a href="javascript:toggleblock('guard_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('guard')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2305.13681">arXiv</a> 
+
+      <p align="justify"> <i id="guard_abs">Due to the trial-and-error nature, it is typically challenging to apply RL algorithms to safety-critical real-world applications, such as autonomous driving, human-robot interaction, robot manipulation, etc, where such errors are not tolerable. Recently, safe RL (i.e. constrained RL) has emerged rapidly in the literature, in which the agents explore the environment while satisfying constraints. Due to the diversity of algorithms and tasks, it remains difficult to compare existing safe RL algorithms. To fill that gap, we introduce GUARD, a Generalized Unified SAfe Reinforcement Learning Development Benchmark. GUARD has several advantages compared to existing benchmarks. First, GUARD is a generalized benchmark with a wide variety of RL agents, tasks, and safety constraint specifications. Second, GUARD comprehensively covers state-of-the-art safe RL algorithms with self-contained implementations. Third, GUARD is highly customizable in tasks and algorithms. We present a comparison of state-of-the-art safe RL algorithms in various task settings using GUARD and establish baselines that future work can build on.</i></p>
+
+      <pre xml:space="preserve">
+        @article{zhao2023guard,
+          title={Guard: A safe reinforcement learning benchmark},
+          author={Zhao, Weiye and Sun, Yifan and Li, Feihan and Chen, Rui and Liu, Ruixuan and Wei, Tianhao and Liu, Changliu},
+          journal={arXiv preprint arXiv:2305.13681},
+          year={2023}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
   <!-- HTCP -->
   <tr>
     <td width="40%" valign="top" align="center">
@@ -207,11 +241,10 @@
       <p><a href="https://arxiv.org/pdf/2304.09260" id="UAISSA">
       <heading>Hybrid Task Constrained Planner for Robot Manipulator in Confined Environment</heading></a><br>
       <b>Yifan Sun</b>, Weiye Zhao, Changliu Liu<br>
-      ACC 2023<br>
+      American Control Conference (ACC) 2023<br>
       </p>
 
       <div class="paper" id="htcp">
-      <a href="https://arxiv.org/pdf/2304.09260">pdf</a> |
       <a href="javascript:toggleblock('htcp_abs')">abstract</a> |
       <a shape="rect" href="javascript:togglebib('htcp')" class="togglebib">bibtex</a> |
       <a href="https://arxiv.org/pdf/2304.09260">arXiv</a> 
@@ -264,10 +297,16 @@
 hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
-  hideblock('htcp_abs');
+  hideblock('koopman_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
-  hideblock('koopman_abs');
+  hideblock('lego_manipulation_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('guard_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('htcp_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('maniploco_abs');
