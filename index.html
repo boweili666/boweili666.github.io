@@ -170,14 +170,13 @@
       ACC 2023<br>
       </p>
 
-      <div class="paper" id="hover">
-      <a href="https://hover-versatile-humanoid.github.io/">webpage</a> |
-      <a href="https://hover-versatile-humanoid.github.io/resources/HOVER_paper.pdf">pdf</a> |
-      <a href="javascript:toggleblock('hover_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('hover')" class="togglebib">bibtex</a> |
+      <div class="paper" id="htcp">
+      <a href="https://arxiv.org/abs/2410.21229">pdf</a> |
+      <a href="javascript:toggleblock('htcp_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('htcp')" class="togglebib">bibtex</a> |
       <a href="https://arxiv.org/abs/2410.21229">arXiv</a> 
 
-      <p align="justify"> <i id="hover_abs">Humanoid whole-body control requires adapting to diverse tasks such as navigation, loco-manipulation, and tabletop manipulation, each demanding a different mode of control. For example, navigation relies on root velocity tracking, while tabletop manipulation prioritizes upper-body joint angle tracking. Existing approaches typically train individual policies tailored to a specific command space, limiting their transferability across modes. We present the key insight that full-body kinematic motion imitation can serve as a common abstraction for all these tasks and provide general-purpose motor skills for learning multiple modes of whole-body control. Building on this, we propose HOVER (Humanoid Versatile Controller), a multi-mode policy distillation framework that consolidates diverse control modes into a unified policy. HOVER enables seamless transitions between control modes while preserving the distinct advantages of each, offering a robust and scalable solution for humanoid control across a wide range of modes. By eliminating the need for policy retraining for each control mode, our approach improves efficiency and flexibility for future humanoid applications.</i></p>
+      <p align="justify"> <i id="htcp_abs">Incremental motion planning has emerged as a powerful approach for generating safe trajectories in confined environments. However, its effectiveness can be hampered by susceptibility to local optima. This vulnerability arises from the algorithm's heavy dependence on the previously achieved configuration (pose) as a reference for the next step. This paper presents a novel incremental motion planning approach for redundant robot arms. It leverages an optimization-based planner combined with null-space exploration to escape local optima and generate high-quality trajectories satisfying task and collision constraints. Our approach is evaluated in an onsite polishing scenario with various robot and workpiece configurations, demonstrating significant improvements in trajectory quality compared to existing methods. The proposed approach has the potential for broad applications in industrial tasks involving redundant robot arms.</i></p>
 
       <pre xml:space="preserve">
         @inproceedings{sun2024hybrid,
