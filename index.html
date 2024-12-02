@@ -124,6 +124,8 @@
 
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+  <!-- Koopman -->
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://arxiv.org/pdf/2411.14321">
@@ -157,6 +159,44 @@
     </td>
   </tr>
 
+  <!-- Lego Manipulation -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2309.02354">
+          <img src="images/lego_manipulation/lego_manipulation.gif" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2309.02354" id="lego_manipulation">
+      <heading>A Lightweight and Transferable Design for Robust LEGO Manipulation</heading></a><br>
+      Ruixuan Liu, <b>Yifan Sun</b>, Changliu Liu<br>
+      ISFA, 2024<br>
+      </p>
+
+      <div class="paper" id="lego_manipulation">
+      <a href="https://arxiv.org/pdf/2309.02354">pdf</a> |
+      <a href="javascript:toggleblock('lego_manipulation_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('lego_manipulation')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2309.02354">arXiv</a> 
+
+      <p align="justify"> <i id="lego_manipulation_abs">Lego is a well-known platform for prototyping pixelized objects. However, robotic Lego prototyping (i.e., manipulating Lego bricks) is challenging due to the tight connections and accuracy requirements. This paper investigates safe and efficient robotic Lego manipulation. In particular, this paper reduces the complexity of the manipulation by hardware-software co-design. An end-of-arm tool (EOAT) is designed, which reduces the problem dimension and allows large industrial robots to manipulate small Lego bricks. In addition, this paper uses evolution strategy to optimize the robot motion for Lego manipulation. Experiments demonstrate that the EOAT can reliably manipulate Lego bricks and the learning framework can effectively and safely improve the manipulation performance to a 100% success rate. The co-design is deployed to multiple robots (i.e., FANUC LR-mate 200id/7L and Yaskawa GP4) to demonstrate its generalizability and transferability. In the end, we show that the proposed solution enables sustainable robotic Lego prototyping, in which the robot can repeatedly assemble and disassemble different prototypes.</i></p>
+
+      <pre xml:space="preserve">
+        @inproceedings{liu2024lightweight,
+          title={A lightweight and transferable design for robust lego manipulation},
+          author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
+          booktitle={International Symposium on Flexible Automation},
+          volume={87882},
+          pages={V001T07A004},
+          year={2024},
+          organization={American Society of Mechanical Engineers}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
+  <!-- HTCP -->
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://arxiv.org/pdf/2304.09260">
@@ -178,16 +218,16 @@
 
       <p align="justify"> <i id="htcp_abs">Incremental motion planning has emerged as a powerful approach for generating safe trajectories in confined environments. However, its effectiveness can be hampered by susceptibility to local optima. This vulnerability arises from the algorithm's heavy dependence on the previously achieved configuration (pose) as a reference for the next step. This paper presents a novel incremental motion planning approach for redundant robot arms. It leverages an optimization-based planner combined with null-space exploration to escape local optima and generate high-quality trajectories satisfying task and collision constraints. Our approach is evaluated in an onsite polishing scenario with various robot and workpiece configurations, demonstrating significant improvements in trajectory quality compared to existing methods. The proposed approach has the potential for broad applications in industrial tasks involving redundant robot arms.</i></p>
 
-<pre xml:space="preserve">
-  @inproceedings{sun2024hybrid,
-    title={Hybrid Task Constrained Incremental Planner for Robot Manipulators in Confined Environments},
-    author={Sun, Yifan and Zhao, Weiye and Liu, Changliu},
-    booktitle={2024 American Control Conference (ACC)},
-    pages={3847--3852},
-    year={2024},
-    organization={IEEE}
-  }
-</pre>
+      <pre xml:space="preserve">
+        @inproceedings{sun2024hybrid,
+          title={Hybrid Task Constrained Incremental Planner for Robot Manipulators in Confined Environments},
+          author={Sun, Yifan and Zhao, Weiye and Liu, Changliu},
+          booktitle={2024 American Control Conference (ACC)},
+          pages={3847--3852},
+          year={2024},
+          organization={IEEE}
+        }
+      </pre>
       </div>
     </td>
   </tr>
