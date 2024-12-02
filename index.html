@@ -241,7 +241,7 @@
       <p><a href="https://arxiv.org/pdf/2304.09260" id="UAISSA">
       <heading>Hybrid Task Constrained Planner for Robot Manipulator in Confined Environment</heading></a><br>
       <b>Yifan Sun</b>, Weiye Zhao, Changliu Liu<br>
-      American Control Conference (ACC) 2023<br>
+      American Control Conference (ACC) 2024<br>
       </p>
 
       <div class="paper" id="htcp">
@@ -259,6 +259,39 @@
           pages={3847--3852},
           year={2024},
           organization={IEEE}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
+  <!-- S3PO -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2308.13140">
+          <img src="images/s3po/s3po.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2308.13140" id="UAISSA">
+      <heading>Learn with imagination: Safe set guided state-wise constrained policy optimization</heading></a><br>
+      Feihan Li*, <b>Yifan Sun</b>*, Weiye Zhao*, Rui Chen, Tianhao Wei, Changliu Liu<br>
+      2023<br>
+      </p>
+
+      <div class="paper" id="htcp">
+      <a href="javascript:toggleblock('htcp_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('htcp')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2308.13140">arXiv</a> 
+
+      <p align="justify"> <i id="htcp_abs">Deep reinforcement learning (RL) excels in various control tasks, yet the absence of safety guarantees hampers its real-world applicability. In particular, explorations during learning usually results in safety violations, while the RL agent learns from those mistakes. On the other hand, safe control techniques ensure persistent safety satisfaction but demand strong priors on system dynamics, which is usually hard to obtain in practice. To address these problems, we present Safe Set Guided State-wise Constrained Policy Optimization (S-3PO), a pioneering algorithm generating state-wise safe optimal policies with zero training violations, i.e., learning without mistakes. S-3PO first employs a safety-oriented monitor with black-box dynamics to ensure safe exploration. It then enforces an "imaginary" cost for the RL agent to converge to optimal behaviors within safety constraints. S-3PO outperforms existing methods in high-dimensional robotics tasks, managing state-wise constraints with zero training violation. This innovation marks a significant stride towards real-world safe RL deployment.</i></p>
+
+      <pre xml:space="preserve">
+        @article{li2023learn,
+          title={Learn with imagination: Safe set guided state-wise constrained policy optimization},
+          author={Li, Feihan and Sun, Yifan and Zhao, Weiye and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+          journal={arXiv preprint arXiv:2308.13140},
+          year={2023}
         }
       </pre>
       </div>
@@ -307,6 +340,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('htcp_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('s3po_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('maniploco_abs');
