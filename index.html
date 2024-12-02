@@ -124,27 +124,57 @@
 
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2411.14321">
+          <img src="images/htcp/koopman.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2411.14321" id="koopman">
+      <heading>Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots</heading></a><br>
+      Feihan Li, Abulikemu Abuduweili, <b>Yifan Sun</b>, Rui Chen, Weiye Zhao, Changliu Liu
+      </p>
 
+      <div class="paper" id="koopman">
+      <a href="https://arxiv.org/pdf/2411.14321">pdf</a> |
+      <a href="javascript:toggleblock('koopman_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('koopman')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2411.14321">arXiv</a> 
+
+      <p align="justify"> <i id="koopman_abs">The control of legged robots, particularly humanoid and quadruped robots, presents significant challenges due to their high-dimensional and nonlinear dynamics. While linear systems can be effectively controlled using methods like Model Predictive Control (MPC), the control of nonlinear systems remains complex. One promising solution is the Koopman Operator, which approximates nonlinear dynamics with a linear model, enabling the use of proven linear control techniques. However, achieving accurate linearization through data-driven methods is difficult due to issues like approximation error, domain shifts, and the limitations of fixed linear state-space representations. These challenges restrict the scalability of Koopman-based approaches. This paper addresses these challenges by proposing a continual learning algorithm designed to iteratively refine Koopman dynamics for high-dimensional legged robots. The key idea is to progressively expand the dataset and latent space dimension, enabling the learned Koopman dynamics to converge towards accurate approximations of the true system dynamics. Theoretical analysis shows that the linear approximation error of our method converges monotonically. Experimental results demonstrate that our method achieves high control performance on robots like Unitree G1/H1/A1/Go2 and ANYmal D, across various terrains using simple linear MPC controllers. This work is the first to successfully apply linearized Koopman dynamics for locomotion control of high-dimensional legged robots, enabling a scalable model-based control solution.</i></p>
+
+      <pre xml:space="preserve">
+        @article{li2024continual,
+          title={Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots},
+          author={Li, Feihan and Abuduweili, Abulikemu and Sun, Yifan and Chen, Rui and Zhao, Weiye and Liu, Changliu},
+          journal={arXiv preprint arXiv:2411.14321},
+          year={2024}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://arxiv.org/pdf/2304.09260">
-          <img src="images/htcp/htcp.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          <img src="images/htcp/htcp.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
       </a>
     </td>
     <td width="60%" valign="top">
       <p><a href="https://arxiv.org/pdf/2304.09260" id="htcp">
       <heading>Hybrid Task Constrained Planner for Robot Manipulator in Confined Environment</heading></a><br>
-      Yifan Sun, Weiye Zhao, Changliu Liu<br>
+      <b>Yifan Sun</b>, Weiye Zhao, Changliu Liu<br>
       ACC 2023<br>
       </p>
 
-      <div class="paper" id="uaissa">
+      <div class="paper" id="htcp">
       <a href="https://arxiv.org/pdf/2304.09260">pdf</a> |
-      <a href="javascript:toggleblock('uaissa_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('uaissa')" class="togglebib">bibtex</a> |
+      <a href="javascript:toggleblock('htcp_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('htcp')" class="togglebib">bibtex</a> |
       <a href="https://arxiv.org/pdf/2304.09260">arXiv</a> 
 
-      <p align="justify"> <i id="uaissa_abs">Incremental motion planning has emerged as a powerful approach for generating safe trajectories in confined environments. However, its effectiveness can be hampered by susceptibility to local optima. This vulnerability arises from the algorithm's heavy dependence on the previously achieved configuration (pose) as a reference for the next step. This paper presents a novel incremental motion planning approach for redundant robot arms. It leverages an optimization-based planner combined with null-space exploration to escape local optima and generate high-quality trajectories satisfying task and collision constraints. Our approach is evaluated in an onsite polishing scenario with various robot and workpiece configurations, demonstrating significant improvements in trajectory quality compared to existing methods. The proposed approach has the potential for broad applications in industrial tasks involving redundant robot arms.</i></p>
+      <p align="justify"> <i id="htcp_abs">Incremental motion planning has emerged as a powerful approach for generating safe trajectories in confined environments. However, its effectiveness can be hampered by susceptibility to local optima. This vulnerability arises from the algorithm's heavy dependence on the previously achieved configuration (pose) as a reference for the next step. This paper presents a novel incremental motion planning approach for redundant robot arms. It leverages an optimization-based planner combined with null-space exploration to escape local optima and generate high-quality trajectories satisfying task and collision constraints. Our approach is evaluated in an onsite polishing scenario with various robot and workpiece configurations, demonstrating significant improvements in trajectory quality compared to existing methods. The proposed approach has the potential for broad applications in industrial tasks involving redundant robot arms.</i></p>
 
       <pre xml:space="preserve">
         @inproceedings{sun2024hybrid,
