@@ -196,6 +196,38 @@
     </td>
   </tr>
 
+  <!-- APO -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2305.13681">
+          <img src="images/apo/apo.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2305.13681" id="apo">
+      <heading>Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence</heading></a><br>
+      Weiye Zhao*, Feihan Li*, <b>Yifan Sun</b>, Rui Chen, Tianhao Wei, Changliu Liu<br>
+      International Conference on Machine Learning (ICML), 2024<br>
+      </p>
+
+      <div class="paper" id="apo">
+      <a href="javascript:toggleblock('apo_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('apo')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2305.13681">arXiv</a> 
+
+      <p align="justify"> <i id="apo_abs">In recent years, trust region on-policy reinforcement learning has achieved impressive results in addressing complex control tasks and gaming scenarios. However, contemporary state-of-the-art algorithms within this category primarily emphasize improvement in expected performance, lacking the ability to control over the worst-case performance outcomes. To address this limitation, we introduce a novel objective function, optimizing which leads to guaranteed monotonic improvement in the lower probability bound of performance with high confidence. Building upon this groundbreaking theoretical advancement, we further introduce a practical solution called Absolute Policy Optimization (APO). Our experiments demonstrate the effectiveness of our approach across challenging continuous control benchmark tasks and extend its applicability to mastering Atari games. Our findings reveal that APO as well as its efficient variation Proximal Absolute Policy Optimization (PAPO) significantly outperforms state-of-the-art policy gradient algorithms, resulting in substantial improvements in worst-case performance, as well as expected performance.</i></p>
+
+      <pre xml:space="preserve">
+        @inproceedings{zhaoabsolute,
+          title={Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence},
+          author={Zhao, Weiye and Li, Feihan and Sun, Yifan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+          booktitle={Forty-first International Conference on Machine Learning}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
   <!-- Guard -->
   <tr>
     <td width="40%" valign="top" align="center">
@@ -279,12 +311,12 @@
       2023<br>
       </p>
 
-      <div class="paper" id="htcp">
-      <a href="javascript:toggleblock('htcp_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('htcp')" class="togglebib">bibtex</a> |
+      <div class="paper" id="s3po">
+      <a href="javascript:toggleblock('s3po_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('s3po')" class="togglebib">bibtex</a> |
       <a href="https://arxiv.org/pdf/2308.13140">arXiv</a> 
 
-      <p align="justify"> <i id="htcp_abs">Deep reinforcement learning (RL) excels in various control tasks, yet the absence of safety guarantees hampers its real-world applicability. In particular, explorations during learning usually results in safety violations, while the RL agent learns from those mistakes. On the other hand, safe control techniques ensure persistent safety satisfaction but demand strong priors on system dynamics, which is usually hard to obtain in practice. To address these problems, we present Safe Set Guided State-wise Constrained Policy Optimization (S-3PO), a pioneering algorithm generating state-wise safe optimal policies with zero training violations, i.e., learning without mistakes. S-3PO first employs a safety-oriented monitor with black-box dynamics to ensure safe exploration. It then enforces an "imaginary" cost for the RL agent to converge to optimal behaviors within safety constraints. S-3PO outperforms existing methods in high-dimensional robotics tasks, managing state-wise constraints with zero training violation. This innovation marks a significant stride towards real-world safe RL deployment.</i></p>
+      <p align="justify"> <i id="s3po_abs">Deep reinforcement learning (RL) excels in various control tasks, yet the absence of safety guarantees hampers its real-world applicability. In particular, explorations during learning usually results in safety violations, while the RL agent learns from those mistakes. On the other hand, safe control techniques ensure persistent safety satisfaction but demand strong priors on system dynamics, which is usually hard to obtain in practice. To address these problems, we present Safe Set Guided State-wise Constrained Policy Optimization (S-3PO), a pioneering algorithm generating state-wise safe optimal policies with zero training violations, i.e., learning without mistakes. S-3PO first employs a safety-oriented monitor with black-box dynamics to ensure safe exploration. It then enforces an "imaginary" cost for the RL agent to converge to optimal behaviors within safety constraints. S-3PO outperforms existing methods in high-dimensional robotics tasks, managing state-wise constraints with zero training violation. This innovation marks a significant stride towards real-world safe RL deployment.</i></p>
 
       <pre xml:space="preserve">
         @article{li2023learn,
@@ -334,6 +366,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('lego_manipulation_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('apo_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('guard_abs');
