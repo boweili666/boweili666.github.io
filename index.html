@@ -133,7 +133,7 @@
       </a>
     </td>
     <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/pdf/2411.14321" id="koopman">
+      <p><a href="https://arxiv.org/pdf/2411.14321" id="KOOPMAN">
       <heading>Continual Learning and Lifting of Koopman Dynamics for Linear Control of Legged Robots</heading></a><br>
       Feihan Li, Abulikemu Abuduweili, <b>Yifan Sun</b>, Rui Chen, Weiye Zhao, Changliu Liu<br>
       2024<br>
@@ -167,7 +167,7 @@
       </a>
     </td>
     <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/pdf/2309.02354" id="lego_manipulation">
+      <p><a href="https://arxiv.org/pdf/2309.02354" id="LegoManipulation">
       <heading>A Lightweight and Transferable Design for Robust LEGO Manipulation</heading></a><br>
       Ruixuan Liu, <b>Yifan Sun</b>, Changliu Liu<br>
       International Symposium on Flexible Automation (ISFA), 2024<br>
@@ -204,7 +204,7 @@
       </a>
     </td>
     <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/pdf/2305.13681" id="apo">
+      <p><a href="https://arxiv.org/pdf/2305.13681" id="APO">
       <heading>Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence</heading></a><br>
       Weiye Zhao*, Feihan Li*, <b>Yifan Sun</b>, Rui Chen, Tianhao Wei, Changliu Liu<br>
       International Conference on Machine Learning (ICML), 2024<br>
@@ -222,6 +222,39 @@
           title={Absolute Policy Optimization: Enhancing Lower Probability Bound of Performance with High Confidence},
           author={Zhao, Weiye and Li, Feihan and Sun, Yifan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
           booktitle={Forty-first International Conference on Machine Learning}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
+  <!-- SCPO -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2305.13681">
+          <img src="images/scpo/scpo.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2305.13681" id="SCPO">
+      <heading>State-wise Constrained Policy Optimization</heading></a><br>
+      Weiye Zhao, Rui Chen, <b>Yifan Sun</b>, Tianhao Wei, Changliu Liu<br>
+      Transactions on Machine Learning Research (TMLR), 2024<br>
+      </p>
+
+      <div class="paper" id="scpo">
+      <a href="javascript:toggleblock('scpo_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('scpo')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2305.13681">arXiv</a> 
+
+      <p align="justify"> <i id="scpo_abs">Reinforcement Learning (RL) algorithms have shown tremendous success in simulation environments, but their application to real-world problems faces significant challenges, with safety being a major concern. In particular, enforcing state-wise constraints is essential for many challenging tasks such as autonomous driving and robot manipulation. However, existing safe RL algorithms under the framework of Constrained Markov Decision Process (CMDP) do not consider state-wise constraints. To address this gap, we propose State-wise Constrained Policy Optimization (SCPO), the first general-purpose policy search algorithm for state-wise constrained reinforcement learning. SCPO provides guarantees for state-wise constraint satisfaction in expectation. In particular, we introduce the framework of Maximum Markov Decision Process, and prove that the worst-case safety violation is bounded under SCPO. We demonstrate the effectiveness of our approach on training neural network policies for extensive robot locomotion tasks, where the agent must satisfy a variety of state-wise safety constraints. Our results show that SCPO significantly outperforms existing methods and can handle state-wise constraints in high-dimensional robotics tasks.</i></p>
+
+      <pre xml:space="preserve">
+        @article{zhao2023state,
+          title={State-wise constrained policy optimization},
+          author={Zhao, Weiye and Chen, Rui and Sun, Yifan and Wei, Tianhao and Liu, Changliu},
+          journal={arXiv preprint arXiv:2306.12594},
+          year={2023}
         }
       </pre>
       </div>
