@@ -195,6 +195,39 @@
     </td>
   </tr>
 
+  <!-- ASCPO -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://arxiv.org/pdf/2410.01212?">
+          <img src="images/ascpo/ascpo.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://arxiv.org/pdf/2410.01212?" id="ASCPO">
+      <heading>Absolute State-wise Constrained Policy Optimization: High-Probability State-wise Constraints Satisfaction</heading></a><br>
+      Weiye Zhao*, Feihan Li*, <b>Yifan Sun</b>, Yujie Yang, Rui Chen, Tianhao Wei, Changliu Liu<br>
+      2024<br>
+      </p>
+
+      <div class="paper" id="ascpo">
+      <a href="javascript:toggleblock('ascpo_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('ascpo')" class="togglebib">bibtex</a> |
+      <a href="https://arxiv.org/pdf/2410.01212?">arXiv</a> 
+
+      <p align="justify"> <i id="ascpo_abs">Enforcing state-wise safety constraints is critical for the application of reinforcement learning (RL) in real-world problems, such as autonomous driving and robot manipulation. However, existing safe RL methods only enforce state-wise constraints in expectation or enforce hard state-wise constraints with strong assumptions. The former does not exclude the probability of safety violations, while the latter is impractical. Our insight is that although it is intractable to guarantee hard state-wise constraints in a model-free setting, we can enforce state-wise safety with high probability while excluding strong assumptions. To accomplish the goal, we propose Absolute State-wise Constrained Policy Optimization (ASCPO), a novel general-purpose policy search algorithm that guarantees high-probability state-wise constraint satisfaction for stochastic systems. We demonstrate the effectiveness of our approach by training neural network policies for extensive robot locomotion tasks, where the agent must adhere to various state-wise safety constraints. Our results show that ASCPO significantly outperforms existing methods in handling state-wise constraints across challenging continuous control tasks, highlighting its potential for real-world applications.</i></p>
+
+      <pre xml:space="preserve">
+        @article{zhao2024absolute,
+          title={Absolute State-wise Constrained Policy Optimization: High-Probability State-wise Constraints Satisfaction},
+          author={Zhao, Weiye and Li, Feihan and Sun, Yifan and Wang, Yujie and Chen, Rui and Wei, Tianhao and Liu, Changliu},
+          journal={arXiv preprint arXiv:2410.01212},
+          year={2024}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
   <!-- APO -->
   <tr>
     <td width="40%" valign="top" align="center">
@@ -366,7 +399,7 @@
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://arxiv.org/pdf/2305.15667">
-          <img src="images/lego2dlfd/lego2dlfd.png" alt="sym" width="50%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          <img src="images/lego2dlfd/lego2dlfd.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
       </a>
     </td>
     <td width="60%" valign="top">
@@ -400,7 +433,7 @@
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://ieeexplore.ieee.org/document/9863251">
-          <img src="images/jpc/jpc.gif" alt="sym" width="50%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          <img src="images/jpc/jpc.gif" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
       </a>
     </td>
     <td width="60%" valign="top">
@@ -445,19 +478,7 @@
         </tr>
     </tbody>
   </table>
-  <!-- <table width="30%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody>
-        <tr>
-            <td style="padding:0px">
-                <br>
-                <br>
-                <div>
-                  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=j7pCFMS--HyWHJq-O4KWye7muE9ye6LmWaKOF2-16g0"></script>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-  </table> -->
+
 
 
 
@@ -480,6 +501,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('lego_manipulation_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('ascpo_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('apo_abs');
