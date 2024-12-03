@@ -379,21 +379,22 @@
   <!-- Lego2DLFD -->
   <tr>
     <td width="40%" valign="top" align="center">
-      <a href="https://arxiv.org/pdf/2308.13140">
-          <img src="images/lego2dlfd/lego2dlfd.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      <a href="https://arxiv.org/pdf/2305.15667">
+          <img src="images/lego2dlfd/lego2dlfd.png" alt="sym" width="50%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
       </a>
     </td>
     <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/pdf/2308.13140" id="Lego2DLFD">
+      <p><a href="https://arxiv.org/pdf/2305.15667" id="Lego2DLFD">
       <heading>Robotic LEGO Assembly and Disassembly from Human Demonstration</heading></a><br>
       Ruixuan Liu, <b>Yifan Sun</b>, Changliu Liu<br>
-      2023<br>
+      ACC Workshop on Recent Advancement of Human Autonomy Interaction and Integration, 2023<br>
       </p>
 
       <div class="paper" id="lego2dlfd">
+      <a href="https://www.youtube.com/watch?v=CRIKbV_0TvU">youtube</a> |
       <a href="javascript:toggleblock('lego2dlfd_abs')">abstract</a> |
       <a shape="rect" href="javascript:togglebib('lego2dlfd')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/pdf/2308.13140">arXiv</a> 
+      <a href="https://arxiv.org/pdf/2305.15667">arXiv</a> 
 
       <p align="justify"> <i id="lego2dlfd_abs">This paper studies automatic prototyping using LEGO. To satisfy individual needs and self-sustainability, this paper presents a framework that learns the assembly and disassembly sequences from human demonstrations. In addition, a digital twin is developed to verify the correctness of robot learning before deploying to the real world. Moreover, an end-effector tool (EOT) is designed, which allows large industrial robots to easily manipulate LEGO bricks. The proposed system is deployed to a FANUC LR-mate 200id/7L robot. Experiments demonstrate that the proposed system can effectively learn the assembly and disassembly tasks from human demonstrations. And the learned tasks are realized by the FANUC robot.</i></p>
 
@@ -403,6 +404,42 @@
           author={Liu, Ruixuan and Sun, Yifan and Liu, Changliu},
           journal={arXiv preprint arXiv:2305.15667},
           year={2023}
+        }
+      </pre>
+      </div>
+    </td>
+  </tr>
+
+  <!-- JPC -->
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://ieeexplore.ieee.org/document/9863251">
+          <img src="images/jpc/jpc.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://ieeexplore.ieee.org/document/9863251" id="JPC">
+      <heading>Jerk-bounded position controller with real-time task modification for interactive industrial robots</heading></a><br>
+      Ruixuan Liu, Rui Chen, <b>Yifan Sun</b>, Yu Zhao, Changliu Liu<br>
+      IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), 2022<br>
+      </p>
+
+      <div class="paper" id="jpc">
+      <a href="https://www.youtube.com/watch?v=bha6pHhytZA">youtube</a> |
+      <a href="javascript:toggleblock('jpc_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('jpc')" class="togglebib">bibtex</a> |
+      <a href="https://ieeexplore.ieee.org/document/9863251">arXiv</a> 
+
+      <p align="justify"> <i id="jpc_abs">Industrial robots are widely used in many applications with structured and deterministic environments. However, the contemporary need requires industrial robots to intelligently operate in dynamic environments. It is challenging to design a safe and efficient robotic system with industrial robots in a dynamic environment for several reasons. First, most industrial robots require the input to have specific formats, which takes additional efforts to convert from task-level user commands. Second, existing robot drivers do not support overwriting ongoing tasks in real-time, which hinders the robot from responding to the dynamic environment. Third, most industrial robots only expose motion-level control, making it challenging to enforce dynamic constraints during trajectory tracking. To resolve the above challenges, this paper presents a jerk-bounded position control driver (JPC) for industrial robots. JPC provides a unified interface for tracking complex trajectories and is able to enforce dynamic constraints using motion-level control, without accessing servo-level control. Most importantly, JPC enables real-time trajectory modification. Users can overwrite the ongoing task with a new one without violating dynamic constraints. The proposed JPC is implemented and tested on the FANUC LR Mate 200id/7L robot with both artificially generated data and an interactive robot handover task. Experiments show that the proposed JPC can track complex trajectories accurately within dynamic limits and seamlessly switch to new trajectory references before the ongoing task ends.</i></p>
+
+      <pre xml:space="preserve">
+        @inproceedings{liu2022jerk,
+          title={Jerk-bounded position controller with real-time task modification for interactive industrial robots},
+          author={Liu, Ruixuan and Chen, Rui and Sun, Yifan and Zhao, Yu and Liu, Changliu},
+          booktitle={2022 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)},
+          pages={1771--1778},
+          year={2022},
+          organization={IEEE}
         }
       </pre>
       </div>
@@ -462,6 +499,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('lego2dlfd_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('jpc_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('maniploco_abs');
