@@ -24,9 +24,10 @@
         </p>
         <p class="contact">
           <a href="mailto:boweili@andrew.cmu.edu">Email</a> ·
-          <a href="https://scholar.google.com/" target="_blank" rel="noopener">Scholar</a> ·
-          <a href="https://github.com/lakde" target="_blank" rel="noopener">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/bowei-li-a44453301/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=FxXuUXkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a> ·
+          <a href="https://github.com/boweili666" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/bowei-li-a44453301/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a>
         </p>
       </div>
     </header>
@@ -63,35 +64,105 @@
 
     <!-- Publications -->
     <section class="section">
-      <h2>Publications</h2>
+      <h2>Publications &amp; Preprints</h2>
       <p class="note">* denotes equal contribution. Author names in <strong>bold</strong> indicate me.</p>
+
+      <!-- ARSTAG -->
+      <div class="pub" id="arstag">
+        <div class="pub-thumb placeholder" aria-hidden="true">ARSTAG</div>
+        <div class="pub-info">
+          <p class="pub-title">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</p>
+          <p class="pub-authors"><strong>Bowei Li</strong>, Yuner Zhang, Changliu Liu</p>
+          <p class="pub-venue"><em>Manuscript</em>, 2026 · Submitted to ICRA</p>
+          <p class="pub-links">
+            <a href="javascript:void(0)" data-toggle="arstag-summary">summary</a> ·
+            <a href="javascript:void(0)" data-toggle="arstag-bib">bibtex</a>
+          </p>
+          <div id="arstag-summary" class="pub-extra abstract">ARSTAG uses a coordinator with reconstruction, collection, and learning agents to generate task-specific robot training data. Starting from an RGB image and a task instruction within a configured robot setup, the system reconstructs a simulation scene, generates demonstrations, and trains policies for real-robot deployment. Tool feedback coordinates revisions across stages.</div>
+          <pre id="arstag-bib" class="pub-extra bibtex">@unpublished{li2026arstag,
+  title  = {ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation},
+  author = {Li, Bowei and Zhang, Yuner and Liu, Changliu},
+  year   = {2026},
+  note   = {Submitted to ICRA}
+}</pre>
+        </div>
+      </div>
 
       <!-- BrickCraft -->
       <div class="pub">
         <div class="pub-thumb">
-          <a href="http://arxiv.org/abs/2605.07605">
+          <a href="https://arxiv.org/abs/2605.07605">
             <video src="images/brickcraft.mp4" autoplay loop muted playsinline></video>
           </a>
         </div>
         <div class="pub-info">
           <p class="pub-title">
-            <a href="http://arxiv.org/abs/2605.07605">BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance</a>
+            <a href="https://arxiv.org/abs/2605.07605">BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance for Long-Horizon Interlocking Brick Assembly</a>
           </p>
           <p class="pub-authors">Jichuan Yu*, <strong>Bowei Li</strong>*, Zhenran Tang, Guanxing Lu, Chuxiong Hu, Ruixuan Liu, Changliu Liu</p>
-          <p class="pub-venue"><em>arXiv preprint</em>, 2026</p>
+          <p class="pub-venue"><em>arXiv preprint</em>, 2026 · Submitted to IEEE Robotics and Automation Letters (RA-L)</p>
           <p class="pub-links">
             <a href="javascript:void(0)" data-toggle="brickcraft-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="brickcraft-bib">bibtex</a> ·
-            <a href="http://arxiv.org/abs/2605.07605">arXiv</a>
+            <a href="https://arxiv.org/abs/2605.07605">arXiv</a>
           </p>
           <div id="brickcraft-abs" class="pub-extra abstract">
             Autonomous robotic assembly of interlocking bricks demands seamless integration of long-horizon task reasoning, spatial grounding, and fine-grained manipulation. This paper presents BrickCraft, a compositional framework designed for long-horizon and generalizable interlocking brick assembly. BrickCraft models the assembly process using a relative formulation, where each step is anchored to a reference brick within the partial structure, thereby decomposing complex tasks into a finite set of reusable primitive skills. BrickCraft bridges the gap between high-level assembly plans and physical execution through situated manuals, which provide explicit spatial guidance for learned visuomotor skills by projecting the assembly intent onto real-time robot observations. Finally, BrickCraft employs a compositional execution pipeline that chains these spatially grounded skills to accomplish long-horizon assembly tasks. Extensive experimental validations demonstrate that BrickCraft acquires proficient assembly skills from a limited set of demonstrations and exhibits strong compositional generalization to unseen structures.
           </div>
           <pre id="brickcraft-bib" class="pub-extra bibtex">@article{yu2026brickcraft,
-  title   = {BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance},
+  title   = {BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance for Long-Horizon Interlocking Brick Assembly},
   author  = {Yu, Jichuan and Li, Bowei and Tang, Zhenran and Lu, Guanxing and Hu, Chuxiong and Liu, Ruixuan and Liu, Changliu},
   journal = {arXiv preprint arXiv:2605.07605},
   year    = {2026}
+}</pre>
+        </div>
+      </div>
+
+      <!-- ManiSkillFormer -->
+      <div class="pub" id="maniskillformer">
+        <div class="pub-thumb placeholder" aria-hidden="true">ManiSkillFormer</div>
+        <div class="pub-info">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2609.16331">ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts</a></p>
+          <p class="pub-authors">Peiqi Yu, Mosam Dabhi, Shangtao Li, <strong>Bowei Li</strong>, Laszlo Jeni, Changliu Liu</p>
+          <p class="pub-venue"><em>arXiv preprint</em>, 2026 · Submitted to ICRA</p>
+          <p class="pub-links">
+            <a href="javascript:void(0)" data-toggle="maniskillformer-summary">summary</a> ·
+            <a href="javascript:void(0)" data-toggle="maniskillformer-bib">bibtex</a> ·
+            <a href="https://arxiv.org/abs/2609.16331">arXiv</a>
+          </p>
+          <div id="maniskillformer-summary" class="pub-extra abstract">ManiSkillFormer connects perception and reusable manipulation skills through geometric contracts. LLM agents generate task-specific geometric requirements and motion templates from human-defined skill structures. A perception module grounds the required geometry in the current scene, enabling skill execution and composition without additional robot demonstrations or per-object policy fine-tuning.</div>
+          <pre id="maniskillformer-bib" class="pub-extra bibtex">@misc{yu2026maniskillformer,
+  title         = {ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts},
+  author        = {Yu, Peiqi and Dabhi, Mosam and Li, Shangtao and Li, Bowei and Jeni, Laszlo and Liu, Changliu},
+  year          = {2026},
+  eprint        = {2609.16331},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2609.16331}
+}</pre>
+        </div>
+      </div>
+
+      <!-- MD-COAS -->
+      <div class="pub" id="mdcoas">
+        <div class="pub-thumb placeholder" aria-hidden="true">MD-COAS</div>
+        <div class="pub-info">
+          <p class="pub-title"><a href="https://arxiv.org/abs/2607.14455">Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling</a></p>
+          <p class="pub-authors">Zhilin He, <strong>Bowei Li</strong>, Jianlin Dou, Yuner Zhang, Changliu Liu</p>
+          <p class="pub-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2026</p>
+          <p class="pub-links">
+            <a href="javascript:void(0)" data-toggle="mdcoas-summary">summary</a> ·
+            <a href="javascript:void(0)" data-toggle="mdcoas-bib">bibtex</a> ·
+            <a href="https://arxiv.org/abs/2607.14455">arXiv</a>
+          </p>
+          <div id="mdcoas-summary" class="pub-extra abstract">MD-COAS integrates soft constraint handling through an inexact Augmented Lagrangian Method with hard projection using Convex Feasible Sets. It adapts constraint enforcement throughout model-based diffusion. Evaluations on non-convex 2D planning benchmarks and a 7-DoF arm avoidance task examine safety, success, convergence, and final trajectory cost.</div>
+          <pre id="mdcoas-bib" class="pub-extra bibtex">@inproceedings{he2026mdcoas,
+  title     = {Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling},
+  author    = {He, Zhilin and Li, Bowei and Dou, Jianlin and Zhang, Yuner and Liu, Changliu},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year      = {2026},
+  eprint    = {2607.14455},
+  url       = {https://arxiv.org/abs/2607.14455}
 }</pre>
         </div>
       </div>
@@ -105,8 +176,8 @@
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2510.00083">Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</a>
           </p>
-          <p class="pub-authors">Hanjiang Hu, <strong>Bowei Li</strong>*, Ziwei Wang*, Tianhao Wei, Casidhe Hutchison, Eric Sample, Changliu Liu</p>
-          <p class="pub-venue"><em>arXiv preprint</em>, 2025</p>
+          <p class="pub-authors">Hanjiang Hu*, <strong>Bowei Li</strong>*, Ziwei Wang*, Tianhao Wei, Casidhe Hutchison, Eric Sample, Changliu Liu</p>
+          <p class="pub-venue"><em>arXiv preprint</em>, 2025 · Submitted to the American Control Conference (ACC)</p>
           <p class="pub-links">
             <a href="javascript:void(0)" data-toggle="pruning-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="pruning-bib">bibtex</a> ·
@@ -135,7 +206,7 @@
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2506.06567">NeSyPack: A Neuro-Symbolic Framework for Bimanual Logistics Packing</a>
           </p>
-          <p class="pub-authors"><strong>Bowei Li</strong>, Peiqi Yu, Zhenran Tang, Han Zhou, Yifan Sun, Ruixuan Liu, Changliu Liu</p>
+          <p class="pub-authors"><strong>Bowei Li</strong>*, Peiqi Yu*, Zhenran Tang, Han Zhou, Yifan Sun, Ruixuan Liu, Changliu Liu</p>
           <p class="pub-venue"><em>RSS 2025 Workshop on Benchmarking Robot Manipulation</em> · <strong>First Prize</strong>, WBCD Competition @ ICRA 2025</p>
           <p class="pub-links">
             <a href="javascript:void(0)" data-toggle="nesy-abs">abstract</a> ·
@@ -164,7 +235,7 @@
         </div>
         <div class="pub-info">
           <p class="pub-title">
-            <a href="https://arxiv.org/abs/2502.03132">SPARK: A Modular Benchmark for Humanoid Robot Safety</a>
+            <a href="https://arxiv.org/abs/2502.03132">SPARK: Safe Protective and Assistive Robot Kit</a>
           </p>
           <p class="pub-authors">Yifan Sun, Rui Chen, Kai S. Yun, Yikuan Fang, Sebin Jung, Feihan Li, <strong>Bowei Li</strong>, Weiye Zhao, Changliu Liu</p>
           <p class="pub-venue"><em>IFAC Symposium on Robotics</em>, 2025</p>
@@ -194,10 +265,10 @@
         </div>
         <div class="pub-info">
           <p class="pub-title">
-            <a href="https://arxiv.org/abs/2409.06010">When Learning Meets Dynamics: Distributed User Connectivity Maximization in UAV-Based Communication Networks</a>
+            <a href="https://arxiv.org/abs/2409.06010">When Learning Meets Dynamics: Distributed User Connectivity Maximization in AAV-Based Communication Networks</a>
           </p>
           <p class="pub-authors"><strong>Bowei Li</strong>, Saugat Tripathi, AKM Salman Hosain, Ran Zhang, Miao Wang, Jiang (Linda) Xie</p>
-          <p class="pub-venue"><em>IEEE Transactions on Cognitive Communications and Networking</em>, vol. 12, pp. 175–188, 2025</p>
+          <p class="pub-venue"><em>IEEE Transactions on Cognitive Communications and Networking</em>, 12(1):175–188, 2026</p>
           <p class="pub-links">
             <a href="javascript:void(0)" data-toggle="wlmd-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="wlmd-bib">bibtex</a> ·
@@ -207,12 +278,13 @@
             Distributed management over UAV-based communication networks (UCNs) has attracted increasing research attention. In this work, we study a distributed user connectivity maximization problem in a UCN, featuring a horizontal study over different levels of information exchange and a consideration of dynamics in UAV set and user distribution. The problem is formulated as a time-coupled mixed-integer non-convex optimization. A heuristic two-stage UAV–user association policy is proposed to determine connectivity faster. To tackle the NP-hard problem at scale, DUCM-1 is proposed under the multi-agent deep Q learning (MA-DQL) framework, evaluating how information-exchange levels impact convergence; DUCM-2 then handles arbitrary join-ins and quits of UAVs in a considered horizon.
           </div>
           <pre id="wlmd-bib" class="pub-extra bibtex">@article{li2025when,
-  title   = {When Learning Meets Dynamics: Distributed User Connectivity Maximization in UAV-Based Communication Networks},
+  title   = {When Learning Meets Dynamics: Distributed User Connectivity Maximization in AAV-Based Communication Networks},
   author  = {Li, Bowei and Tripathi, Saugat and Hosain, AKM Salman and Zhang, Ran and Wang, Miao and Xie, Jiang},
   journal = {IEEE Transactions on Cognitive Communications and Networking},
   volume  = {12},
+  number  = {1},
   pages   = {175--188},
-  year    = {2025}
+  year    = {2026}
 }</pre>
         </div>
       </div>
@@ -227,7 +299,7 @@
             <a href="https://arxiv.org/abs/2409.17139">Learning with Dynamics: Autonomous Regulation of UAV-Based Communication Networks with Dynamic UAV Crew</a>
           </p>
           <p class="pub-authors">Ran Zhang, <strong>Bowei Li</strong>, Liyuan Zhang, Jiang (Linda) Xie, Miao Wang</p>
-          <p class="pub-venue"><em>IEEE Communications Magazine</em>, 2025</p>
+          <p class="pub-venue"><em>IEEE Communications Magazine</em>, 64(1):72–78, 2026</p>
           <p class="pub-links">
             <a href="javascript:void(0)" data-toggle="lwd-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="lwd-bib">bibtex</a> ·
@@ -240,7 +312,10 @@
   title   = {Learning with Dynamics: Autonomous Regulation of UAV-Based Communication Networks with Dynamic UAV Crew},
   author  = {Zhang, Ran and Li, Bowei and Zhang, Liyuan and Xie, Jiang and Wang, Miao},
   journal = {IEEE Communications Magazine},
-  year    = {2025}
+  volume  = {64},
+  number  = {1},
+  pages   = {72--78},
+  year    = {2026}
 }</pre>
         </div>
       </div>
@@ -339,7 +414,7 @@
     </section>
 
     <footer class="footer">
-      <p>Last updated: May 2026 · Template adapted from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.</p>
+      <p>Last updated: September 2026 · Template adapted from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.</p>
     </footer>
 
   </main>
