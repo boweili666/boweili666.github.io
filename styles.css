@@ -246,3 +246,11 @@ strong { font-weight: 600; }
   .pub-thumb { max-width: 200px; }
   .news-list .date { display: block; width: auto; }
 }
+
+/* Larger paired ARSTAG video, with equal-size simulation and real panels. */
+#arstag { grid-template-columns: 240px 1fr; }
+#arstag .pub-thumb { max-width: 100%; }
+@media (max-width: 600px) {
+  #arstag { grid-template-columns: 1fr; }
+  #arstag .pub-thumb { width: 100%; max-width: 400px; }
+}
