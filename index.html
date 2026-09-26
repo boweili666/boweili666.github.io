@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20260926-refresh" />
+  <link rel="stylesheet" href="styles.css?v=20260926-wall" />
 </head>
 <body id="top">
 
@@ -18,31 +18,31 @@
       <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/brickcraft.jpg" tabindex="-1"><source src="images/wall/brickcraft.mp4" type="video/mp4" /></video>
       <span>BrickCraft</span>
     </div>
-    <div class="wall-tile wall-arstag">
-      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/arstag.jpg" tabindex="-1"><source src="images/wall/arstag.mp4" type="video/mp4" /></video>
-      <span>ARSTAG</span>
+    <div class="wall-tile wall-perseve">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/perseve-real.jpg" tabindex="-1"><source src="images/wall/perseve-real.mp4" type="video/mp4" /></video>
+      <span>PerSEVE · Real Robot</span>
     </div>
     <div class="wall-tile wall-spark">
       <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/spark.jpg" tabindex="-1"><source src="images/wall/spark.mp4" type="video/mp4" /></video>
       <span>SPARK</span>
     </div>
-    <div class="wall-tile wall-etc">
-      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/etc.jpg" tabindex="-1"><source src="images/wall/etc.mp4" type="video/mp4" /></video>
-      <span>ETC · Future Football</span>
+    <div class="wall-tile wall-nesypack">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/nesypack.jpg" tabindex="-1"><source src="images/wall/nesypack.mp4" type="video/mp4" /></video>
+      <span>NeSyPack</span>
     </div>
     <div class="wall-tile wall-mascei">
       <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/mascei.jpg" tabindex="-1"><source src="images/wall/mascei.mp4" type="video/mp4" /></video>
       <span>MASCEI</span>
     </div>
-    <div class="wall-tile wall-nesypack">
-      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/nesypack.jpg" tabindex="-1"><source src="images/wall/nesypack.mp4" type="video/mp4" /></video>
-      <span>NeSyPack</span>
+    <div class="wall-tile wall-etc">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/etc.jpg" tabindex="-1"><source src="images/wall/etc.mp4" type="video/mp4" /></video>
+      <span>ETC · Future Football</span>
     </div>
   </div>
   <div class="wall-shade" aria-hidden="true"></div>
   <nav class="topbar" aria-label="Main navigation">
     <a class="wordmark" href="#top">BOWEI LI<span>ROBOTICS &amp; LEARNING</span></a>
-    <div class="topbar-actions"><a href="#about">About</a><a href="#publications">Research</a><a href="#etc-future-football">ETC</a><a href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a><button id="background-toggle" type="button" aria-pressed="false">Pause background</button></div>
+    <div class="topbar-actions"><a href="#about">About</a><a href="#publications">Research</a><a href="#perseve">Projects</a><a href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a><button id="background-toggle" type="button" aria-pressed="false">Pause background</button></div>
   </nav>
   <main class="container">
     <div class="hero">
@@ -112,23 +112,30 @@
 
       <!-- ARSTAG -->
       <div class="pub" id="arstag">
-        <div class="pub-thumb"><a href="images/arstag-six-pairs-2x.mp4" target="_blank" rel="noopener" aria-label="Watch ARSTAG simulation and real-robot comparison"><video src="images/arstag-six-pairs-2x.mp4" poster="images/arstag-six-pairs-2x.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Six simulation and real-robot task pairs shown in three rounds, two pairs per round, at twice original speed"></video></a></div>
+        <div class="pub-thumb"><a href="https://boweili666.github.io/ARSTAG/" aria-label="ARSTAG project page"><video src="images/arstag-six-pairs-2x.mp4" poster="images/arstag-six-pairs-2x.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Six simulation and real-robot task pairs shown in three rounds, two pairs per round, at twice original speed"></video></a></div>
         <div class="pub-info">
           <p class="pub-badges"><span class="badge">Under review · ICRA</span></p>
-          <p class="pub-title">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</p>
+          <p class="pub-title"><a href="https://arxiv.org/abs/2609.24563">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</a></p>
           <p class="pub-authors"><strong>Bowei Li</strong>, Yuner Zhang, Changliu Liu</p>
-          <p class="pub-venue"><em>Manuscript</em>, 2026 · Submitted to ICRA</p>
+          <p class="pub-venue"><em>arXiv preprint</em>, 2026 · Submitted to ICRA</p>
           <p class="pub-links">
-            <a href="javascript:void(0)" data-toggle="arstag-summary">summary</a> ·
+            <a href="javascript:void(0)" data-toggle="arstag-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="arstag-bib">bibtex</a> ·
+            <a href="https://arxiv.org/abs/2609.24563">arXiv</a> ·
+            <a href="https://boweili666.github.io/ARSTAG/">project page</a> ·
             <a href="images/arstag-six-pairs-2x.mp4" target="_blank" rel="noopener">video</a>
           </p>
-          <div id="arstag-summary" class="pub-extra abstract">ARSTAG uses a coordinator with reconstruction, collection, and learning agents to generate task-specific robot training data. Starting from an RGB image and a task instruction within a configured robot setup, the system reconstructs a simulation scene, generates demonstrations, and trains policies for real-robot deployment. Tool feedback coordinates revisions across stages.</div>
-          <pre id="arstag-bib" class="pub-extra bibtex">@unpublished{li2026arstag,
-  title  = {ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation},
-  author = {Li, Bowei and Zhang, Yuner and Liu, Changliu},
-  year   = {2026},
-  note   = {Submitted to ICRA}
+          <div id="arstag-abs" class="pub-extra abstract">
+            Adapting visuomotor policies to new manipulation tasks often requires substantial manual engineering or teleoperated data collection. Simulation can provide task-specific data at scale, but constructing the scene, designing expert behavior, and configuring data generation still require significant per-task effort. We present ARSTAG, an agentic Real2Sim2Real system that turns a single RGB image and a natural-language instruction directly into robot policy-learning data. A hierarchy of language agents constructs a task-scoped simulation scene, generates robot-feasible demonstrations, and expands the training distribution through task-consistent randomization, while a coordinator agent manages cross-stage feedback and recovery. Across seven manipulation tasks spanning grasping, placement, and stacking, the ARSTAG-generated demonstrations enable sim-to-real transfer of three visuomotor policy architectures to a dual-arm robot, with π<sub>0.5</sub> achieving an average real-world success rate of 74.6%. Ablations show that task-consistent randomization substantially improves robustness, and policy performance increases with generated dataset size.
+          </div>
+          <pre id="arstag-bib" class="pub-extra bibtex">@misc{li2026arstag,
+  title         = {ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation},
+  author        = {Li, Bowei and Zhang, Yuner and Liu, Changliu},
+  year          = {2026},
+  eprint        = {2609.24563},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2609.24563}
 }</pre>
         </div>
       </div>
@@ -245,7 +252,7 @@
       </div>
 
       <!-- NeSyPack -->
-      <div class="pub">
+      <div class="pub" id="nesypack">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2506.06567">
             <video src="images/wbcd.mp4" autoplay loop muted playsinline></video>
@@ -262,7 +269,8 @@
             <a href="javascript:void(0)" data-toggle="nesy-abs">abstract</a> ·
             <a href="javascript:void(0)" data-toggle="nesy-bib">bibtex</a> ·
             <a href="https://arxiv.org/abs/2506.06567">arXiv</a> ·
-            <a href="https://www.youtube.com/watch?v=MlgWAzo-Ezo">video</a>
+            <a href="https://www.youtube.com/watch?v=MlgWAzo-Ezo">video</a> ·
+            <a href="#wbcd">competition</a>
           </p>
           <div id="nesy-abs" class="pub-extra abstract">
             This paper presents NeSyPack, a neuro-symbolic framework for bimanual logistics packing. NeSyPack combines data-driven models and symbolic reasoning to build an explainable hierarchical system that is generalizable, data-efficient, and reliable. It decomposes a task into subtasks via hierarchical reasoning, and further into atomic skills managed by a symbolic skill graph. The graph selects skill parameters, robot configurations, and task-specific control strategies for execution. This modular design enables robustness, adaptability, and efficient reuse — outperforming end-to-end models that require large-scale retraining. Using NeSyPack, our team won the First Prize in the What Bimanuals Can Do (WBCD) competition at the 2025 IEEE International Conference on Robotics and Automation.
@@ -403,70 +411,70 @@
         </div>
       </div>
 
-      <!-- MIBE -->
-      <div class="pub">
-        <div class="pub-thumb">
-          <a href="https://www.nature.com/articles/s41598-024-56518-z"><img src="images/MIBE.png" alt="MIBE" /></a>
-        </div>
-        <div class="pub-info">
-          <p class="pub-badges"><span class="badge badge-accent">Scientific Reports</span></p>
-          <p class="pub-title">
-            <a href="https://www.nature.com/articles/s41598-024-56518-z">Sentiment Analysis of Video Danmakus Based on MIBE-RoBERTa-FF-BiLSTM</a>
-          </p>
-          <p class="pub-authors">Jianbo Zhao, Huailiang Liu, Yakai Wang, Weili Zhang, Xiaojin Zhang, <strong>Bowei Li</strong>, Tong Sun, Yanwei Qi, Shanzhuang Zhang</p>
-          <p class="pub-venue"><em>Scientific Reports</em>, 14(1):5827, 2024</p>
-          <p class="pub-links">
-            <a href="javascript:void(0)" data-toggle="mibe-abs">abstract</a> ·
-            <a href="javascript:void(0)" data-toggle="mibe-bib">bibtex</a> ·
-            <a href="https://www.nature.com/articles/s41598-024-56518-z">article</a>
-          </p>
-          <div id="mibe-abs" class="pub-extra abstract">
-            Danmakus are user-generated comments overlaid on videos, enabling real-time interactions between viewers and video content. Their emotional orientation can reflect viewers' attitudes toward video segments, helping platforms optimize recommendation and evaluate users' abnormal emotion levels. We propose a video danmaku sentiment analysis method based on MIBE-RoBERTa-FF-BiLSTM. We construct a Bilibili Must-Watch List and Top Video Danmaku Sentiment Dataset of 10,000 positive/negative danmakus across 18 themes; a new word recognition algorithm based on mutual information and branch entropy discovers 2,610 irregular network words; Maslow's hierarchy of needs guides consistent annotation. The proposed model achieves an F1 of 94.06%.
-          </div>
-          <pre id="mibe-bib" class="pub-extra bibtex">@article{zhao2024sentiment,
-  title     = {Sentiment Analysis of Video Danmakus Based on MIBE-RoBERTa-FF-BiLSTM},
-  author    = {Zhao, Jianbo and Liu, Huailiang and Wang, Yakai and Zhang, Weili and Zhang, Xiaojin and Li, Bowei and Sun, Tong and Qi, Yanwei and Zhang, Shanzhuang},
-  journal   = {Scientific Reports},
-  volume    = {14},
-  number    = {1},
-  pages     = {5827},
-  year      = {2024}
-}</pre>
-        </div>
-      </div>
+    </section>
 
-      <!-- Rumor -->
-      <div class="pub">
-        <div class="pub-thumb">
-          <a href="https://www.nature.com/articles/s41598-024-62459-4"><img src="images/rumor.png" alt="Rumor" /></a>
-        </div>
-        <div class="pub-info">
-          <p class="pub-badges"><span class="badge badge-accent">Scientific Reports</span></p>
-          <p class="pub-title">
-            <a href="https://www.nature.com/articles/s41598-024-62459-4">Research on Domain Ontology Construction Based on the Content Features of Online Rumors</a>
-          </p>
-          <p class="pub-authors">Jianbo Zhao, Huailiang Liu, Weili Zhang, Tong Sun, Qiuyi Chen, Yuehai Wang, Jiale Cheng, Yan Zhuang, Xiaojin Zhang, Shanzhuang Zhang, <strong>Bowei Li</strong>, Ruiyu Ding</p>
-          <p class="pub-venue"><em>Scientific Reports</em>, 14(1):12134, 2024</p>
-          <p class="pub-links">
-            <a href="javascript:void(0)" data-toggle="rumor-abs">abstract</a> ·
-            <a href="javascript:void(0)" data-toggle="rumor-bib">bibtex</a> ·
-            <a href="https://www.nature.com/articles/s41598-024-62459-4">article</a>
-          </p>
-          <div id="rumor-abs" class="pub-extra abstract">
-            Online rumors are widespread and difficult to identify, bringing serious harm to society and individuals. To effectively detect and govern them, in-depth semantic analysis is required. This paper proposes a TFI domain ontology construction method aiming to achieve semantic parsing and reasoning of rumor text content. Starting from the term, frame, and instance layers, and based on top-level ontology reuse, core literature feature extraction, and discovery of new concepts, the method obtains five parent classes and 88 subclasses. OWL is used for encoding, Protégé for visualization, and SWRL rules with a pellet reasoner mine implicit knowledge and judge rumor categories.
-          </div>
-          <pre id="rumor-bib" class="pub-extra bibtex">@article{zhao2024research,
-  title     = {Research on Domain Ontology Construction Based on the Content Features of Online Rumors},
-  author    = {Zhao, Jianbo and Liu, Huailiang and Zhang, Weili and Sun, Tong and Chen, Qiuyi and Wang, Yuehai and Cheng, Jiale and Zhuang, Yan and Zhang, Xiaojin and Zhang, Shanzhuang and others},
-  journal   = {Scientific Reports},
-  volume    = {14},
-  number    = {1},
-  pages     = {12134},
-  year      = {2024}
-}</pre>
-        </div>
+    <!-- PerSEVE -->
+    <section class="section etc-project" id="perseve" aria-labelledby="perseve-heading">
+      <p class="kicker">Project</p>
+      <h2 id="perseve-heading">PerSEVE</h2>
+      <p class="etc-subtitle">Perception by Segmentation, Extensible Visual Ecosystem</p>
+      <p class="note">ARM Institute AIDF · Lockheed Martin ATL · Carnegie Mellon University · GE Aerospace · Sep 2025 – Jul 2026</p>
+      <p>PerSEVE builds manufacturing-specific data and foundation perception models for industrial parts. The project curated high-quality CAD models, generated large-scale labeled synthetic scenes in NVIDIA Isaac Sim, fine-tuned SAM 2.1 for manufacturing segmentation (SAM4MFG), and used geometry-driven hard-example mining to target the model's own failure cases.</p>
+      <div class="stat-row">
+        <div><strong>8,918</strong><span>curated CAD models</span></div>
+        <div><strong>100K</strong><span>synthetic scenes</span></div>
+        <div><strong>~550K</strong><span>object instances</span></div>
+        <div><strong>6</strong><span>annotation types</span></div>
       </div>
+      <p><strong>My contributions.</strong> Led an image-based Real2Sim pipeline for object reconstruction, editable scene graphs, and relation-constrained Isaac Sim synthesis; developed physics-based synthetic-data generation with domain randomization and dense annotations.</p>
+      <div class="etc-videos perseve-videos">
+        <figure>
+          <video controls muted playsinline preload="none" poster="images/perseve/scene-intelligence-2x.jpg" aria-label="Scene Intelligence demo: from a reference photo to a simulated scene, shown at twice normal speed">
+            <source src="images/perseve/scene-intelligence-2x.mp4" type="video/mp4" />
+            <a href="images/perseve/scene-intelligence-2x.mp4">Watch the Scene Intelligence demo</a>
+          </video>
+          <figcaption><strong>Scene Intelligence · Real2Sim Demo</strong><br />Photo → segmentation → scene graph → Isaac Sim scene · 2× speed · 1:00</figcaption>
+        </figure>
+        <figure>
+          <video controls muted playsinline preload="none" poster="images/perseve/real-robot-reel.jpg" aria-label="Extension to real robots: paired simulation and real-robot task executions">
+            <source src="images/perseve/real-robot-reel.mp4" type="video/mp4" />
+            <a href="images/perseve/real-robot-reel.mp4">Watch the real-robot extension</a>
+          </video>
+          <figcaption><strong>Extension to Real Robots</strong><br />Generated simulation scenes paired with real-robot execution · 1:14 · see <a href="#arstag">ARSTAG</a></figcaption>
+        </figure>
+      </div>
+      <p class="section-link"><a href="https://arxiv.org/abs/2602.20551" target="_blank" rel="noopener">Related: CAD-Prompted SAM3 (arXiv) →</a></p>
+    </section>
 
+    <!-- WBCD competition -->
+    <section class="section etc-project" id="wbcd" aria-labelledby="wbcd-heading">
+      <p class="kicker">Competition</p>
+      <h2 id="wbcd-heading">WBCD Challenge @ ICRA 2025 · <span class="gold-text">First Prize</span></h2>
+      <p class="etc-subtitle">What Bimanual Teleoperation and Learning from Demonstration Can Do</p>
+      <p class="note">ICRA 2025 · Atlanta · Logistics packing track · Team from Carnegie Mellon University</p>
+      <p>Our CMU team won first place in the bimanual logistics-packing challenge at ICRA 2025, using a neuro-symbolic framework that decomposes packing into reusable skills with failure recovery. The system was later published as <a href="#nesypack">NeSyPack</a> at the RSS 2025 Workshop on Benchmarking Robot Manipulation.</p>
+      <p><strong>My contributions.</strong> Developed the neuro-symbolic bimanual task-execution pipeline combining skill graphs, object grounding, 6D pose estimation, and failure recovery; deployed on Unitree G1 and Galaxea R1 Lite.</p>
+      <div class="etc-videos wbcd-videos">
+        <figure>
+          <video controls playsinline preload="none" poster="images/wbcd/galaxea-highlight.jpg" aria-label="Bimanual logistics packing at the WBCD challenge, ICRA 2025">
+            <source src="images/wbcd/galaxea-highlight.mp4" type="video/mp4" />
+            <a href="images/wbcd/galaxea-highlight.mp4">Watch the competition highlight</a>
+          </video>
+          <figcaption><strong>Competition Highlight</strong><br />Dual-arm logistics packing at ICRA 2025 · 0:30</figcaption>
+        </figure>
+        <figure>
+          <video controls playsinline preload="none" poster="images/wbcd/cmu-solution.jpg" aria-label="The CMU champion team's NeSyPack solution">
+            <source src="images/wbcd/cmu-solution.mp4" type="video/mp4" />
+            <a href="images/wbcd/cmu-solution.mp4">Watch the champion solution</a>
+          </video>
+          <figcaption><strong>Champion Solution</strong><br />NeSyPack walkthrough · 2:09</figcaption>
+        </figure>
+      </div>
+      <h3>Featured by Galaxea Dynamics</h3>
+      <ul class="etc-features">
+        <li><strong>Galaxea Dynamics</strong> — Official partner of the challenge, on top universities tackling dual-arm logistics packing.<br /><a href="https://x.com/GalaxeaDynamics/status/1925926547396927639" target="_blank" rel="noopener">View on X</a> <span class="note">· May 2025</span></li>
+        <li><strong>Galaxea Dynamics</strong> — “The WBCD Champion Team from Carnegie Mellon University has unveiled their solution.”<br /><a href="https://x.com/GalaxeaDynamics/status/1934989418605203883" target="_blank" rel="noopener">View on X</a> <span class="note">· June 2025</span></li>
+      </ul>
     </section>
 
     <!-- ETC project -->
@@ -507,14 +515,33 @@
       </ul>
     </section>
 
+    <!-- MASCEI -->
+    <section class="section etc-project" id="mascei" aria-labelledby="mascei-heading">
+      <p class="kicker">Project</p>
+      <h2 id="mascei-heading">MASCEI · Automated PPE Production</h2>
+      <p class="etc-subtitle">Rapid-response robotic manufacturing in shipping containers</p>
+      <p class="note">ARM Institute · NIST-funded · Oct 2024 – Sep 2025</p>
+      <p>An ARM Institute project with AFFOA, Siemens, Yaskawa, Carnegie Mellon University and industry partners, building automated face-mask production lines housed in shipping containers. The lines combine robotic sewing, automated visual inspection, picking and sorting, and end-of-line packing and palletizing, so they can go from set-up to production within days rather than months.</p>
+      <p><strong>My contributions.</strong> Integrated hand–eye, tool, and environment calibration across four industrial robot cells, supporting a unified manufacturing calibration workflow.</p>
+      <figure class="etc-coverage">
+        <video controls loop muted playsinline preload="none" poster="images/wall/mascei.jpg" aria-label="MASCEI automated PPE production line">
+          <source src="images/wall/mascei.mp4" type="video/mp4" />
+          <a href="images/wall/mascei.mp4">Watch the MASCEI clip</a>
+        </video>
+        <figcaption>MASCEI system demonstration, June 2025 (excerpt) · Video: ARM Institute</figcaption>
+      </figure>
+      <p class="section-link"><a href="https://arminstitute.org/news/project-highlight-ppe-shipping-containers/" target="_blank" rel="noopener">Full video &amp; project highlight on ARM Institute →</a></p>
+    </section>
+
+
     <footer class="footer">
       <p>Last updated: September 2026 · Template adapted from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.</p>
-      <p class="video-credit">Background demos: BrickCraft · ARSTAG · SPARK · ETC · NeSyPack · <a href="https://arminstitute.org/news/project-highlight-ppe-shipping-containers/" target="_blank" rel="noopener">MASCEI / ARM Institute</a></p>
+      <p class="video-credit">Background demos: BrickCraft · PerSEVE · SPARK · ETC · NeSyPack · <a href="https://arminstitute.org/news/project-highlight-ppe-shipping-containers/" target="_blank" rel="noopener">MASCEI / ARM Institute</a></p>
     </footer>
     </div>
 
   </main>
 
-  <script src="script.js?v=20260926-refresh"></script>
+  <script src="script.js?v=20260926-wall"></script>
 </body>
 </html>
