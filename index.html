@@ -6,10 +6,43 @@
   <meta name="description" content="Bowei Li — Master's student at Carnegie Mellon University, working on robotics, learning, and safety." />
   <title>Bowei Li</title>
   <link rel="shortcut icon" href="images/ri-new-mark-512-512-transparent.png" />
-  <link rel="stylesheet" href="styles.css?v=20260925-etc" />
+  <link rel="stylesheet" href="styles.css?v=20260926-video-wall" />
 </head>
-<body>
+<body id="top">
+
+  <div class="demo-wall" aria-hidden="true">
+    <div class="wall-tile wall-brickcraft">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/brickcraft.jpg" tabindex="-1"><source src="images/wall/brickcraft.mp4" type="video/mp4" /></video>
+      <span>BrickCraft</span>
+    </div>
+    <div class="wall-tile wall-arstag">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/arstag.jpg" tabindex="-1"><source src="images/wall/arstag.mp4" type="video/mp4" /></video>
+      <span>ARSTAG</span>
+    </div>
+    <div class="wall-tile wall-spark">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/spark.jpg" tabindex="-1"><source src="images/wall/spark.mp4" type="video/mp4" /></video>
+      <span>SPARK</span>
+    </div>
+    <div class="wall-tile wall-etc">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/etc.jpg" tabindex="-1"><source src="images/wall/etc.mp4" type="video/mp4" /></video>
+      <span>ETC · Future Football</span>
+    </div>
+    <div class="wall-tile wall-mascei">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/mascei.jpg" tabindex="-1"><source src="images/wall/mascei.mp4" type="video/mp4" /></video>
+      <span>MASCEI</span>
+    </div>
+    <div class="wall-tile wall-nesypack">
+      <video data-background autoplay loop muted playsinline preload="metadata" poster="images/wall/nesypack.jpg" tabindex="-1"><source src="images/wall/nesypack.mp4" type="video/mp4" /></video>
+      <span>NeSyPack</span>
+    </div>
+  </div>
+  <div class="wall-shade" aria-hidden="true"></div>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="wordmark" href="#top">BOWEI LI<span>ROBOTICS &amp; LEARNING</span></a>
+    <div class="topbar-actions"><a href="#publications">Research</a><a href="#etc-future-football">ETC</a><button id="background-toggle" type="button" aria-pressed="false">Pause background</button></div>
+  </nav>
   <main class="container">
+    <div class="hero">
 
     <!-- Header -->
     <header class="header">
@@ -17,6 +50,7 @@
         <img src="images/BoweiPhoto.jpg" alt="Bowei Li" />
       </div>
       <div class="intro">
+        <p class="hero-eyebrow">ROBOT LEARNING · REAL-WORLD SYSTEMS</p>
         <h1>Bowei Li &nbsp;<span class="cn-name">李博伟</span></h1>
         <p class="affiliation">
           M.S. Student, <a href="https://www.ece.cmu.edu">Department of Electrical and Computer Engineering</a><br />
@@ -32,6 +66,9 @@
       </div>
     </header>
 
+    <a class="hero-scroll" href="#about">Explore my research <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="content-sheet" id="about">
     <!-- About -->
     <section class="section">
       <p>
@@ -455,10 +492,12 @@
 
     <footer class="footer">
       <p>Last updated: September 2026 · Template adapted from <a href="http://www.cs.berkeley.edu/~barron/">Jon Barron</a>.</p>
+      <p class="video-credit">Background demos: BrickCraft · ARSTAG · SPARK · ETC · NeSyPack · <a href="https://arminstitute.org/news/project-highlight-ppe-shipping-containers/" target="_blank" rel="noopener">MASCEI / ARM Institute</a></p>
     </footer>
+    </div>
 
   </main>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260926-video-wall"></script>
 </body>
 </html>
