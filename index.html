@@ -6,7 +6,10 @@
   <meta name="description" content="Bowei Li — Master's student at Carnegie Mellon University, working on robotics, learning, and safety." />
   <title>Bowei Li</title>
   <link rel="shortcut icon" href="images/ri-new-mark-512-512-transparent.png" />
-  <link rel="stylesheet" href="styles.css?v=20260926-video-wall" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=20260926-refresh" />
 </head>
 <body id="top">
 
@@ -39,7 +42,7 @@
   <div class="wall-shade" aria-hidden="true"></div>
   <nav class="topbar" aria-label="Main navigation">
     <a class="wordmark" href="#top">BOWEI LI<span>ROBOTICS &amp; LEARNING</span></a>
-    <div class="topbar-actions"><a href="#publications">Research</a><a href="#etc-future-football">ETC</a><button id="background-toggle" type="button" aria-pressed="false">Pause background</button></div>
+    <div class="topbar-actions"><a href="#about">About</a><a href="#publications">Research</a><a href="#etc-future-football">ETC</a><a href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a><button id="background-toggle" type="button" aria-pressed="false">Pause background</button></div>
   </nav>
   <main class="container">
     <div class="hero">
@@ -56,21 +59,23 @@
           M.S. Student, <a href="https://www.ece.cmu.edu">Department of Electrical and Computer Engineering</a><br />
           <a href="https://www.cmu.edu">Carnegie Mellon University</a>
         </p>
+        <div class="interests" aria-label="Research interests"><span>Robot Learning</span><span>Real2Sim2Real</span><span>Long-Horizon Manipulation</span><span>Agentic Policies</span></div>
         <p class="contact">
-          <a href="mailto:boweili@andrew.cmu.edu">Email</a> ·
-          <a href="https://scholar.google.com/citations?user=FxXuUXkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a> ·
-          <a href="https://github.com/boweili666" target="_blank" rel="noopener">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/bowei-li-a44453301/" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="btn btn-primary" href="mailto:boweili@andrew.cmu.edu">Email</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=FxXuUXkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+          <a class="btn" href="https://github.com/boweili666" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/bowei-li-a44453301/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="files/Bowei_Li_CV.pdf" target="_blank" rel="noopener">CV</a>
         </p>
       </div>
     </header>
 
-    <a class="hero-scroll" href="#about">Explore my research <span aria-hidden="true">↓</span></a>
+    <a class="hero-scroll" href="#about"><span class="hero-scroll-dot" aria-hidden="true"></span>Scroll to explore</a>
     </div>
     <div class="content-sheet" id="about">
     <!-- About -->
-    <section class="section">
+    <section class="section about">
+      <p class="kicker">About</p>
       <p>
         I am a Master's student at the
         <a href="https://www.ece.cmu.edu">Department of Electrical and Computer Engineering</a>,
@@ -99,10 +104,9 @@
       </p>
     </section>
 
-    <nav class="section-links" aria-label="Page sections"><a href="#publications">Publications</a> · <a href="#etc-future-football">ETC · Future Football</a></nav>
-
     <!-- Publications -->
     <section class="section">
+      <p class="kicker">Research</p>
       <h2 id="publications">Publications &amp; Preprints</h2>
       <p class="note">* denotes equal contribution. Author names in <strong>bold</strong> indicate me.</p>
 
@@ -110,6 +114,7 @@
       <div class="pub" id="arstag">
         <div class="pub-thumb"><a href="images/arstag-six-pairs-2x.mp4" target="_blank" rel="noopener" aria-label="Watch ARSTAG simulation and real-robot comparison"><video src="images/arstag-six-pairs-2x.mp4" poster="images/arstag-six-pairs-2x.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Six simulation and real-robot task pairs shown in three rounds, two pairs per round, at twice original speed"></video></a></div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge">Under review · ICRA</span></p>
           <p class="pub-title">ARSTAG: An Agentic Real2Sim2Real System for Task-Specific Robot Data Generation</p>
           <p class="pub-authors"><strong>Bowei Li</strong>, Yuner Zhang, Changliu Liu</p>
           <p class="pub-venue"><em>Manuscript</em>, 2026 · Submitted to ICRA</p>
@@ -136,6 +141,7 @@
           </a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge">Under review · RA-L</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2605.07605">BrickCraft: Visuomotor Skill Composition with Situated Manual Guidance for Long-Horizon Interlocking Brick Assembly</a>
           </p>
@@ -162,6 +168,7 @@
       <div class="pub" id="maniskillformer">
         <div class="pub-thumb"><a href="images/maniskillformer.png" target="_blank" rel="noopener"><img src="images/maniskillformer.png" alt="ManiSkillFormer geometric contracts and agentic skill graph" loading="lazy" /></a></div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge">Under review · ICRA</span></p>
           <p class="pub-title"><a href="https://arxiv.org/abs/2609.16331">ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts</a></p>
           <p class="pub-authors">Peiqi Yu, Mosam Dabhi, Shangtao Li, <strong>Bowei Li</strong>, Laszlo Jeni, Changliu Liu</p>
           <p class="pub-venue"><em>arXiv preprint</em>, 2026 · Submitted to ICRA</p>
@@ -187,6 +194,7 @@
       <div class="pub" id="mdcoas">
         <div class="pub-thumb"><a href="images/mdcoas.png" target="_blank" rel="noopener"><img src="images/mdcoas.png" alt="MD-COAS constraint optimization and adaptive diffusion scheduling" loading="lazy" /></a></div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">IROS 2026</span></p>
           <p class="pub-title"><a href="https://arxiv.org/abs/2607.14455">Motion Planning with Model-Based Diffusion via Constraint Optimization and Adaptive Scheduling</a></p>
           <p class="pub-authors">Zhilin He, <strong>Bowei Li</strong>, Jianlin Dou, Yuner Zhang, Changliu Liu</p>
           <p class="pub-venue"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2026</p>
@@ -213,6 +221,7 @@
           <a href="https://arxiv.org/abs/2510.00083"><img src="images/pruning.png" alt="Robust Pruning" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge">Under review · ACC</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2510.00083">Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</a>
           </p>
@@ -243,6 +252,7 @@
           </a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-gold">WBCD 1st Prize · ICRA 2025</span><span class="badge">RSS 2025 Workshop</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2506.06567">NeSyPack: A Neuro-Symbolic Framework for Bimanual Logistics Packing</a>
           </p>
@@ -274,6 +284,7 @@
           </a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">IFAC 2025</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2502.03132">SPARK: Safe Protective and Assistive Robot Kit</a>
           </p>
@@ -304,6 +315,7 @@
           <a href="https://arxiv.org/abs/2409.06010"><img src="images/wlmd.png" alt="WLMD" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">IEEE TCCN</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2409.06010">When Learning Meets Dynamics: Distributed User Connectivity Maximization in AAV-Based Communication Networks</a>
           </p>
@@ -335,6 +347,7 @@
           <a href="https://arxiv.org/abs/2409.17139"><img src="images/lwd.png" alt="LWD" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">IEEE ComMag</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2409.17139">Learning with Dynamics: Autonomous Regulation of UAV-Based Communication Networks with Dynamic UAV Crew</a>
           </p>
@@ -366,6 +379,7 @@
           <a href="https://arxiv.org/abs/2411.05205"><img src="images/user.png" alt="USER" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">ICC 2025</span></p>
           <p class="pub-title">
             <a href="https://arxiv.org/abs/2411.05205">Maximizing User Connectivity in AI-Enabled Multi-UAV Networks: A Distributed Strategy Generalized to Arbitrary User Distributions</a>
           </p>
@@ -395,6 +409,7 @@
           <a href="https://www.nature.com/articles/s41598-024-56518-z"><img src="images/MIBE.png" alt="MIBE" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">Scientific Reports</span></p>
           <p class="pub-title">
             <a href="https://www.nature.com/articles/s41598-024-56518-z">Sentiment Analysis of Video Danmakus Based on MIBE-RoBERTa-FF-BiLSTM</a>
           </p>
@@ -426,6 +441,7 @@
           <a href="https://www.nature.com/articles/s41598-024-62459-4"><img src="images/rumor.png" alt="Rumor" /></a>
         </div>
         <div class="pub-info">
+          <p class="pub-badges"><span class="badge badge-accent">Scientific Reports</span></p>
           <p class="pub-title">
             <a href="https://www.nature.com/articles/s41598-024-62459-4">Research on Domain Ontology Construction Based on the Content Features of Online Rumors</a>
           </p>
@@ -455,6 +471,7 @@
 
     <!-- ETC project -->
     <section class="section etc-project" id="etc-future-football" aria-labelledby="etc-heading">
+      <p class="kicker">Project</p>
       <h2 id="etc-heading">ETC · Future Football</h2>
       <p class="etc-subtitle">Human–Robot Interaction for Future Sports</p>
       <p class="note">Carnegie Mellon University · Entertainment Technology Center (ETC)</p>
@@ -498,6 +515,6 @@
 
   </main>
 
-  <script src="script.js?v=20260926-video-wall"></script>
+  <script src="script.js?v=20260926-refresh"></script>
 </body>
 </html>

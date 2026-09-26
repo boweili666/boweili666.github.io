@@ -32,3 +32,9 @@ wallToggle?.addEventListener('click', () => {
 reduceMotion.addEventListener('change', event => { backgroundPaused = event.matches; updateBackground(); });
 document.addEventListener('visibilitychange', updateBackground);
 updateBackground();
+
+// Solidify the top bar once the reader scrolls past the top of the hero.
+const topbar = document.querySelector('.topbar');
+function updateTopbar() { topbar?.classList.toggle('scrolled', window.scrollY > 40); }
+window.addEventListener('scroll', updateTopbar, { passive: true });
+updateTopbar();
