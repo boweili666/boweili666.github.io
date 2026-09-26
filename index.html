@@ -6,7 +6,7 @@
   <meta name="description" content="Bowei Li — Master's student at Carnegie Mellon University, working on robotics, learning, and safety." />
   <title>Bowei Li</title>
   <link rel="shortcut icon" href="images/ri-new-mark-512-512-transparent.png" />
-  <link rel="stylesheet" href="styles.css?v=20260918-aligned" />
+  <link rel="stylesheet" href="styles.css?v=20260925-etc" />
 </head>
 <body>
   <main class="container">
@@ -62,9 +62,11 @@
       </p>
     </section>
 
+    <nav class="section-links" aria-label="Page sections"><a href="#publications">Publications</a> · <a href="#etc-future-football">ETC · Future Football</a></nav>
+
     <!-- Publications -->
     <section class="section">
-      <h2>Publications &amp; Preprints</h2>
+      <h2 id="publications">Publications &amp; Preprints</h2>
       <p class="note">* denotes equal contribution. Author names in <strong>bold</strong> indicate me.</p>
 
       <!-- ARSTAG -->
@@ -412,6 +414,44 @@
         </div>
       </div>
 
+    </section>
+
+    <!-- ETC project -->
+    <section class="section etc-project" id="etc-future-football" aria-labelledby="etc-heading">
+      <h2 id="etc-heading">ETC · Future Football</h2>
+      <p class="etc-subtitle">Human–Robot Interaction for Future Sports</p>
+      <p class="note">Carnegie Mellon University · Entertainment Technology Center (ETC)</p>
+      <p>A collaboration exploring how people and humanoid robots can play football together, through interactive prototypes and real-robot demonstrations on Unitree G1.</p>
+      <p><strong>My contributions.</strong> Trained and deployed reinforcement-learning control policies on Unitree G1, and built ROS/Python interfaces connecting the robot stack to a Unity front end for interactive control and hardware prototyping.</p>
+      <div class="etc-videos">
+        <figure>
+          <video controls playsinline preload="none" poster="images/etc/future-football.jpg" aria-label="Future Football project showcase">
+            <source src="images/etc/future-football.mp4" type="video/mp4" />
+            <a href="images/etc/future-football.mp4">Watch Future Football</a>
+          </video>
+          <figcaption><strong>Future Football</strong><br />Human–robot interaction showcase · 0:53</figcaption>
+        </figure>
+        <figure>
+          <video controls playsinline preload="none" poster="images/etc/robot-football-demo.jpg" aria-label="Unitree G1 football prototype demonstration">
+            <source src="images/etc/robot-football-demo.mp4" type="video/mp4" />
+            <a href="images/etc/robot-football-demo.mp4">Watch the robot demo</a>
+          </video>
+          <figcaption><strong>Robot Football Prototype</strong><br />Unitree G1 lab demonstration · 0:18</figcaption>
+        </figure>
+      </div>
+      <h3>Featured on LinkedIn</h3>
+      <figure class="etc-coverage">
+        <video id="cmu-showcase-video" controls playsinline preload="metadata" poster="images/etc/cmu-showcase.jpg" aria-label="CMU Future of Sport showcase, project segment at 35 seconds">
+          <source src="images/etc/cmu-showcase.mp4#t=35" type="video/mp4" />
+          <a href="images/etc/cmu-showcase.mp4#t=35">Watch the CMU showcase from 0:35</a>
+        </video>
+        <figcaption>Powering the Future of Sport: A Draft Week Showcase · Video: Carnegie Mellon University</figcaption>
+        <button class="etc-play" type="button" id="play-cmu-segment">Play from 0:35</button>
+      </figure>
+      <ul class="etc-features">
+        <li><strong>Carnegie Mellon University</strong> — Powering the Future of Sport: A Draft Week Showcase.<br /><a href="https://lnkd.in/p/g8qrXzMk" target="_blank" rel="noopener">Watch on LinkedIn</a> <span class="note">· Project segment starts at <strong>0:35</strong></span></li>
+        <li><strong>Derek Ham, ETC Director</strong> — Exploring human–robot football and the future of entertainment.<br /><a href="https://lnkd.in/p/gTS8WxSw" target="_blank" rel="noopener">Watch on LinkedIn</a></li>
+      </ul>
     </section>
 
     <footer class="footer">

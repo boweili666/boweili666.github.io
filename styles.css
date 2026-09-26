@@ -246,3 +246,24 @@ strong { font-weight: 600; }
   .pub-thumb { max-width: 200px; }
   .news-list .date { display: block; width: auto; }
 }
+
+/* ETC project showcase */
+.section-links { margin-top: 1.25rem; font-size: .95rem; }
+#etc-future-football, #publications { scroll-margin-top: 1.5rem; }
+.etc-subtitle { font-size: 1.15rem; font-weight: 600; }
+.etc-project h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; }
+.etc-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
+.etc-videos video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #111; border: 1px solid var(--border); }
+.etc-videos figcaption { margin-top: .5rem; color: var(--muted); font-size: .88rem; line-height: 1.5; }
+.etc-videos figcaption strong { color: var(--fg); }
+.etc-features { padding-left: 1.2rem; font-size: .95rem; }
+.etc-features li + li { margin-top: .75rem; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+@media (max-width: 600px) { .etc-videos { grid-template-columns: 1fr; } }
+
+.etc-coverage { margin: .75rem 0 1.25rem; }
+.etc-coverage video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; }
+.etc-coverage figcaption { color: var(--muted); font-size: .88rem; margin: .5rem 0; }
+.etc-play { color: var(--link); background: white; border: 1px solid var(--border); padding: .45rem .8rem; font: inherit; font-size: .9rem; cursor: pointer; }
+.etc-play:hover { border-color: var(--link); }
+.etc-play:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
