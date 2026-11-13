@@ -6,13 +6,13 @@ document.querySelectorAll('[data-toggle]').forEach(link => {
   });
 });
 
-// Keep every paper in the HTML; enhance the list with topic tabs when JavaScript runs.
+// Keep every paper in the HTML; enhance the list with year tabs when JavaScript runs.
 const publicationTabs = document.querySelector('.pub-tabs');
 const publicationList = document.getElementById('publication-list');
 if (publicationTabs && publicationList) {
   const tabs = [...publicationTabs.querySelectorAll('[data-pub-filter]')];
-  const papers = [...publicationList.querySelectorAll('[data-pub-category]')];
-  const matches = (paper, category) => category === 'all' || paper.dataset.pubCategory === category;
+  const papers = [...publicationList.querySelectorAll('[data-pub-year]')];
+  const matches = (paper, year) => year === 'all' || paper.dataset.pubYear === year;
 
   function selectPublicationTab(tab, focus = false) {
     tabs.forEach(button => {
@@ -54,9 +54,9 @@ if (publicationTabs && publicationList) {
     let id;
     try { id = decodeURIComponent(hash.slice(1)); } catch (_) { return; }
     const target = document.getElementById(id);
-    const paper = target?.closest('[data-pub-category]');
+    const paper = target?.closest('[data-pub-year]');
     if (!paper || !publicationList.contains(paper)) return;
-    if (paper.hidden) selectPublicationTab(tabs.find(tab => tab.dataset.pubFilter === paper.dataset.pubCategory));
+    if (paper.hidden) selectPublicationTab(tabs.find(tab => tab.dataset.pubFilter === paper.dataset.pubYear));
     if (target.classList.contains('pub-extra')) target.classList.add('open');
     requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
   }

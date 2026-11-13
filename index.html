@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" />
-  <link rel="stylesheet" href="styles.css?v=20261113-pub-tabs" />
+  <link rel="stylesheet" href="styles.css?v=20261113-pub-years" />
 </head>
 <body id="top">
 
@@ -110,15 +110,15 @@
       <h2 id="publications">Publications &amp; Preprints</h2>
       <p class="note">* denotes equal contribution. Author names in <strong>bold</strong> indicate me.</p>
 
-      <div class="pub-tabs" role="tablist" aria-label="Publication categories" hidden>
-        <button type="button" id="pub-tab-robotics" role="tab" aria-controls="publication-list" aria-selected="true" data-pub-filter="robotics">Robotics <span class="pub-tab-count" aria-hidden="true"></span></button>
-        <button type="button" id="pub-tab-other" role="tab" aria-controls="publication-list" aria-selected="false" tabindex="-1" data-pub-filter="other">Other Research <span class="pub-tab-count" aria-hidden="true"></span></button>
+      <div class="pub-tabs" role="tablist" aria-label="Publication year" hidden>
+        <button type="button" id="pub-tab-2026" role="tab" aria-controls="publication-list" aria-selected="true" data-pub-filter="2026">2026 <span class="pub-tab-count" aria-hidden="true"></span></button>
+        <button type="button" id="pub-tab-2025" role="tab" aria-controls="publication-list" aria-selected="false" tabindex="-1" data-pub-filter="2025">2025 <span class="pub-tab-count" aria-hidden="true"></span></button>
         <button type="button" id="pub-tab-all" role="tab" aria-controls="publication-list" aria-selected="false" tabindex="-1" data-pub-filter="all">All <span class="pub-tab-count" aria-hidden="true"></span></button>
       </div>
       <div id="publication-list">
 
       <!-- ARSTAG -->
-      <div class="pub" id="arstag" data-pub-category="robotics">
+      <div class="pub" id="arstag" data-pub-year="2026">
         <div class="pub-thumb"><a href="https://boweili666.github.io/ARSTAG/" aria-label="ARSTAG project page"><video src="images/wall/perseve-real.mp4" poster="images/wall/perseve-real.jpg" autoplay loop muted playsinline preload="metadata" aria-label="ARSTAG demo reel: paired simulation and real-robot task executions"></video></a></div>
         <div class="pub-info">
           <p class="pub-badges"><span class="badge">Under review · ICRA</span></p>
@@ -148,7 +148,7 @@
       </div>
 
       <!-- BrickCraft -->
-      <div class="pub" id="brickcraft" data-pub-category="robotics">
+      <div class="pub" id="brickcraft" data-pub-year="2026">
         <div class="pub-thumb">
           <a href="https://intelligent-control-lab.github.io/BrickCraft/" aria-label="BrickCraft project page">
             <video src="images/brickcraft.mp4" autoplay loop muted playsinline></video>
@@ -182,7 +182,7 @@
       </div>
 
       <!-- ManiSkillFormer -->
-      <div class="pub" id="maniskillformer" data-pub-category="robotics">
+      <div class="pub" id="maniskillformer" data-pub-year="2026">
         <div class="pub-thumb"><a href="https://patricia1019.github.io/ManiSkillFormer/" aria-label="ManiSkillFormer project page"><video src="images/maniskillformer.mp4" poster="images/maniskillformer.jpg" autoplay loop muted playsinline preload="metadata" aria-label="ManiSkillFormer real-robot demos: multi-object sorting, cone stacking, and a long-horizon task"></video></a></div>
         <div class="pub-info">
           <p class="pub-badges"><span class="badge">Under review · ICRA</span></p>
@@ -209,7 +209,7 @@
       </div>
 
       <!-- MD-COAS -->
-      <div class="pub" id="mdcoas" data-pub-category="robotics">
+      <div class="pub" id="mdcoas" data-pub-year="2026">
         <div class="pub-thumb"><a href="images/mdcoas.png" target="_blank" rel="noopener"><img src="images/mdcoas.png" alt="MD-COAS constraint optimization and adaptive diffusion scheduling" loading="lazy" /></a></div>
         <div class="pub-info">
           <p class="pub-badges"><span class="badge badge-accent">IROS 2026</span></p>
@@ -234,7 +234,7 @@
       </div>
 
       <!-- Robust Pruning -->
-      <div class="pub" id="pruning" data-pub-category="other">
+      <div class="pub" id="pruning" data-pub-year="2025">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2510.00083"><img src="images/pruning.png" alt="Robust Pruning" /></a>
         </div>
@@ -263,7 +263,7 @@
       </div>
 
       <!-- NeSyPack -->
-      <div class="pub" id="nesypack" data-pub-category="robotics">
+      <div class="pub" id="nesypack" data-pub-year="2025">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2506.06567">
             <video src="images/wbcd.mp4" autoplay loop muted playsinline></video>
@@ -296,7 +296,7 @@
       </div>
 
       <!-- SPARK (single entry, IFAC version) -->
-      <div class="pub" id="spark" data-pub-category="robotics">
+      <div class="pub" id="spark" data-pub-year="2025">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2502.03132">
             <video src="images/spark.mp4" autoplay loop muted playsinline></video>
@@ -329,7 +329,7 @@
       </div>
 
       <!-- WLMD (now published in IEEE TCCN) -->
-      <div class="pub" id="wlmd" data-pub-category="other">
+      <div class="pub" id="wlmd" data-pub-year="2026">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2409.06010"><img src="images/wlmd.png" alt="WLMD" /></a>
         </div>
@@ -361,7 +361,7 @@
       </div>
 
       <!-- LWD (IEEE Communications Magazine) -->
-      <div class="pub" id="lwd" data-pub-category="other">
+      <div class="pub" id="lwd" data-pub-year="2026">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2409.17139"><img src="images/lwd.png" alt="LWD" /></a>
         </div>
@@ -393,7 +393,7 @@
       </div>
 
       <!-- USER (ICC 2025) -->
-      <div class="pub" id="user-network" data-pub-category="other">
+      <div class="pub" id="user-network" data-pub-year="2025">
         <div class="pub-thumb">
           <a href="https://arxiv.org/abs/2411.05205"><img src="images/user.png" alt="USER" /></a>
         </div>
@@ -554,6 +554,6 @@
 
   </main>
 
-  <script src="script.js?v=20261113-pub-tabs"></script>
+  <script src="script.js?v=20261113-pub-years"></script>
 </body>
 </html>
